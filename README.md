@@ -1,5 +1,5 @@
 # User API
-A simple api that allows to register a user, get all registered users, it includes an embedded tomcat and h2 database.
+A simple API that allows to register a user, get all registered users, in addition to other CRUD operations, it includes an embedded tomcat server and h2 database.
 ## Packages Description
 ```
 ├── advice
@@ -16,7 +16,7 @@ A simple api that allows to register a user, get all registered users, it includ
 * SpringbootTestApplication.java : java class used to launch the backend
 
 
-There are 4 entrypoints in our Backend, with different usage, access (permissions) :
+There are 5 entrypoints in our Backend, with different usage:
 
 | Entrypoint      | Usage                        | Type   |
 |-----------------|------------------------------|--------|
@@ -28,7 +28,8 @@ There are 4 entrypoints in our Backend, with different usage, access (permission
 
 
 
-### Deployment from code 
+### Deployment from code (Generating jar file/execution)
 0. Run maven command : mvn clean install
 1. A jar file will be generated inside target folder 
-3. Run the jar using Java command : java -jar "name of the jar file"
+2. Run the jar using Java command : java -jar "name of the jar file"
+3. The application will run on http://localhost:8080/
